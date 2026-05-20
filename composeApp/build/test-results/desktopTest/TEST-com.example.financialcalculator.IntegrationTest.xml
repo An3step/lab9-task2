@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.financialcalculator.IntegrationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-05-19T22:05:38" hostname="DESKTOP-2U2NU26" time="0.085">
+  <properties/>
+  <testcase name="testCapitalizationComparison()[desktop]" classname="com.example.financialcalculator.IntegrationTest" time="0.037"/>
+  <testcase name="testValidationFailureFlow()[desktop]" classname="com.example.financialcalculator.IntegrationTest" time="0.015"/>
+  <testcase name="testLanguageStringsConsistency()[desktop]" classname="com.example.financialcalculator.IntegrationTest" time="0.017"/>
+  <testcase name="testHistoryUpdateSimulation()[desktop]" classname="com.example.financialcalculator.IntegrationTest" time="0.003"/>
+  <testcase name="testFullCalculationFlow()[desktop]" classname="com.example.financialcalculator.IntegrationTest" time="0.005"/>
+  <testcase name="testBoundaryConditions()[desktop]" classname="com.example.financialcalculator.IntegrationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
