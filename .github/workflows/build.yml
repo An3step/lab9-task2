@@ -33,7 +33,8 @@ jobs:
           distribution: 'temurin'
           cache: gradle
       - name: Build Desktop (Windows)
-        run: ./gradlew :composeApp:packageDistributionForCurrentOS
+        # Using --no-daemon can sometimes help with JDK discovery issues on Windows CI
+        run: ./gradlew :composeApp:packageDistributionForCurrentOS --no-daemon
 
   build-wasm:
     runs-on: ubuntu-latest
@@ -63,4 +64,5 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build iOS Framework
-        run: ./gradlew :composeApp:assembleComposeAppDebugFrameworkForIosSimulatorArm64
+        # Fixed task name for iOS simulator target
+        run: ./gradlew :composeApp:linkDebugFrameworkIosSimulatorArm64
